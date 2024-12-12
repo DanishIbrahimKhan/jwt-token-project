@@ -3,7 +3,8 @@ const {register, login, getAllUsersEmail, webHookForGit } = require('../controll
 const {authenticate} = require('../middleware/authMiddleware');
 
 const router = express.Router();
-express.get('/',()=>{
+const app = express()
+app.get('/',()=>{
     res.status(200).json({message:"done"})
 })
 
