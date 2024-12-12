@@ -11,8 +11,15 @@ app.get('/',(req, res)=>{
     res.status(200).json({message:"server runs good"})
 })
 
-sequelize.sync({force:false}).then(()=>{
-    app.listen(PORT, ()=> {
-        console.log(`server running on ${PORT}`)
-    })
-})
+// sequelize.sync({force:false}).then(()=>{
+//     app.listen(PORT, ()=> {
+//         console.log(`server running on ${PORT}`)
+//     })
+// })
+
+sequelize.sync({ force: false }).then(() => {
+    console.log("Database synced");
+  });
+  
+  // Export the app for Vercel serverless functions
+module.exports = app;
