@@ -19,7 +19,7 @@ app.get('/',(req, res)=>{
 // })
 
 sequelize.sync({ force: false }).then(() => {
-    console.log("Database synced hello samo");
+    console.log("Database synced hell o samo");
     
   });
   
