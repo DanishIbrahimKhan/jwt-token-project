@@ -19,7 +19,7 @@ app.get('/',(req, res)=>{
 // })
 
 sequelize.sync({ force: false }).then(() => {
-    console.log("Databddase syddnced hell    ddo   samo");
+    console.log("Databdd  ase syddnced hell    ddo   samo");
     
   });
   
