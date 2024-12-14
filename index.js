@@ -19,7 +19,7 @@ app.get('/',(req, res)=>{
 // })
 
 sequelize.sync({ force: false }).then(() => {
-    console.log("Database synced hell    ddo   samo");
+    console.log("Database syddnced hell    ddo   samo");
     
   });
   
